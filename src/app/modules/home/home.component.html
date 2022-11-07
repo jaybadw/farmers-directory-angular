@@ -70,12 +70,12 @@
           class="mt-4 flex items-center justify-center font-semibold p-5 text-xl flex-wrap"
         >
           <p class="w-full text-center text-base md:text:lg lg:text-3xl">
-            {{ featured.content }}
+            {{ featured.name }}
           </p>
 
           <button
             routerLink="{{ featured.url }}"
-            class="text-xs uppercase rounded-full tracking-wide text-white px-4 py-3 bg-green-600 md:text-sm lg:text-base mt-5"
+            class="text-xs uppercase rounded-full tracking-wide text-white px-4 py-3 bg-green-600 md:text-sm lg:text-base mt-5 "
           >
             View Farmers
           </button>
@@ -111,7 +111,7 @@
     <br />
     <span class="inline-block h-px w-full bg-black"></span>
   </div>
-  <app-card [item]="produce" *ngFor="let produce of inSeason"></app-card>
+  <app-card [product]="produce" *ngFor="let produce of inSeason"></app-card>
   <ol class="flex justify-end gap-1 text-xs font-medium mt-10">
     <li>
       <a

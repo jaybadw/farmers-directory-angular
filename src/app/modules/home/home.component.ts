@@ -1,3 +1,4 @@
+import { Product } from './../../shared/components/models/product';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,77 +11,65 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  produce = [
+  produce: Product[] = [
     {
-      url: '',
-      content: 'Tomato',
+      id: 'Region',
+      url: 'farmers',
+      name: 'Tomato',
       image: 'assets/images/featured-produce/tomatoes.png',
     },
     {
+      id: 'Region',
+
       url: '',
-      content: 'Lettuce',
+      name: 'Lettuce',
       image: 'assets/images/featured-produce/lettuce.png',
     },
     {
+      id: 'Region',
       url: '',
-      content: 'Berry',
+      name: 'Berry',
       image: 'assets/images/featured-produce/berries.png',
     },
     {
+      id: 'Region',
+
       url: '',
-      content: 'Watermelon',
+      name: 'Watermelon',
       image: 'assets/images/featured-produce/melon.png',
     },
     {
+      id: 'Region',
+
       url: '',
-      content: 'Pineapple',
+      name: 'Pineapple',
       image: 'assets/images/featured-produce/pineapple.png',
     },
     {
+      id: 'Region',
+
       url: '',
-      content: 'Banana',
+      name: 'Banana',
       image: 'assets/images/featured-produce/banana.png',
     },
   ];
 
-  inSeason = [
+  inSeason: Product[] = [
     {
+      id: 'Region',
+
       url: '',
-      content: 'Carrots',
+      name: 'Carrots',
       image: 'assets/images/in-season/carrots.png',
-      regions: [
-        {
-          name: 'Clarendon',
-        },
-        {
-          name: 'Kingston',
-        },
-        {
-          name: 'St James',
-        },
-        {
-          name: 'St. Ann',
-        },
-      ],
+      regions: ['Clarendon', 'Kingston'],
     },
     {
+      id: 'Region',
+
       url: '',
-      content: 'Parsley',
+      name: 'Parsley',
       image: 'assets/images/in-season/parsley.png',
-      regions: [
-        {
-          name: 'Clarendon',
-        },
-        {
-          name: 'Kingston',
-        },
-        {
-          name: 'St James',
-        },
-        {
-          name: 'St. Ann',
-        },
-      ],
+      regions: ['Clarendon', 'Kingston'],
     },
   ];
 }
