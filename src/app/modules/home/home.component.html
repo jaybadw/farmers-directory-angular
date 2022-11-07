@@ -1,0 +1,213 @@
+<section
+  class="overflow-hidden bg-[url('assets/images/hero.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  <div class="bg-black/25 p-12 md:p-20 lg:px-16 lg:py-48">
+    <div class="max-w-md text-center mx-auto lg:max-w-4xl">
+      <h2
+        class="text-2xl font-bold text-white sm:text-4xl md:text-5xl xl:text-6xl"
+      >
+        Looking For Organic Foods?
+      </h2>
+
+      <p
+        class="max-w-md text-white/90 mt-6 md:block md:text-lg md:leading-relaxed mx-auto"
+      >
+        Get In Touch With A Farmer Today
+      </p>
+
+      <div class="mt-4 sm:mt-8">
+        <a
+          href="#"
+          class="inline-flex items-center rounded-full bg-green-600 px-8 py-3 text-white shadow-lg transition hover:bg-green-400 focus:outline-none focus:ring"
+        >
+          <span class="text-sm font-medium"> View Farmers </span>
+
+          <svg
+            class="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="mx-auto max-w-screen-xl px-4 py-8">
+    <div>
+      <h2
+        class="mt-1 text-3xl font-semibold uppercase tracking-wide lg:text-4xl text-center"
+      >
+        Featured Produce
+      </h2>
+      <br />
+      <span class="inline-block h-px w-full bg-black"></span>
+    </div>
+
+    <div class="mt-8 grid grid-cols-2 gap-x-8 gap-y-8 lg:grid-cols-3">
+      <a
+        href="#"
+        class="block hover:shadow-lg"
+        *ngFor="let featured of produce"
+      >
+        <img
+          alt=""
+          src="{{ featured.image }}"
+          class="w-3/4 object-contain mx-auto aspect-square"
+        />
+
+        <div
+          class="mt-4 flex items-center justify-evenly font-semibold p-5 text-xl flex-wrap"
+        >
+          <p
+            class="w-full text-center text-base md:text:lg md:w-1/2 md:text-left lg:text-2xl"
+          >
+            {{ featured.content }}
+          </p>
+
+          <button
+            routerLink="{{ featured.url }}"
+            class="text-xs uppercase tracking-wide text-white p-2 bg-green-600 md:text-sm md:w-1/2 lg:text-base"
+          >
+            View Farmers
+          </button>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section
+  class="overflow-hidden bg-[url('assets/images/banner.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  <div class="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="max-w-lg text-center sm:text-left">
+      <h2 class="text-3xl font-bold text-white sm:text-5xl md:text-7xl">
+        Get Connected <br />
+        <span class="text-xl sm:text-2xl md:text-4xl">With Real Farmers</span>
+      </h2>
+
+      <p
+        class="max-w-md text-white/90 md:mt-6 md:block md:text-xl md:leading-relaxed font-semibold"
+      >
+        From the farm to you yaad, cut down third-party costs.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="max-w-screen-xl mx-auto px-4 py-8">
+  <div>
+    <h2 class="mt-1 text-3xl font-semibold uppercase tracking-wide lg:text-4xl">
+      In Season
+    </h2>
+    <br />
+    <span class="inline-block h-px w-full bg-black"></span>
+  </div>
+  <div
+    class="p-4 lg:w-3/4 border border-black my-10 mx-auto"
+    *ngFor="let item of seasonal"
+  >
+    <div
+      class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+    >
+      <img
+        alt="team"
+        class="flex-shrink-0 w-1/3 object-cover object-center sm:mb-0 mb-4"
+        src="{{ item.image }}"
+      />
+      <div class="flex-grow sm:pl-8">
+        <h2 class="title-font font-medium text-lg text-gray-900">
+          {{ item.content }}
+        </h2>
+        <h3 class="text-gray-500 mb-3">Region</h3>
+        <hr />
+        <br />
+        <ul class="mb-4 grid grid-cols-2 grid-rows-2">
+          <li class="w-1/2" *ngFor="let region of item.regions">
+            {{ region.name }}
+          </li>
+        </ul>
+        <button class="px-5 py-2 bg-mainTeal text-white rounded-full">
+          View Farmers
+        </button>
+      </div>
+    </div>
+  </div>
+  <ol class="flex justify-end gap-1 text-xs font-medium mt-10">
+    <li>
+      <a
+        href="#"
+        class="inline-flex h-8 w-16 items-center border border-black justify-evenly"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <span>Prev </span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#"
+        class="block h-8 w-8 border border-black text-center leading-8"
+      >
+        1
+      </a>
+    </li>
+
+    <li
+      class="block h-8 w-8 border-mainTeal bg-mainTeal text-center leading-8 text-white"
+    >
+      2
+    </li>
+
+    <li>
+      <a
+        href="#"
+        class="block h-8 w-8 border border-black text-center leading-8"
+      >
+        3
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#"
+        class="inline-flex h-8 w-16 items-center justify-evenly border border-black"
+      >
+        <span>Next </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </a>
+    </li>
+  </ol>
+</section>
