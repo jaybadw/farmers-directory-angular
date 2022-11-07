@@ -6,19 +6,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './modules/home/home.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { CardComponent } from './shared/components/card/card.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    HeaderComponent,
-    FooterComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, FooterComponent, CardComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
