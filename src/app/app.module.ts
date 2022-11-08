@@ -7,7 +7,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 
-import { FarmersDetailsComponent } from './modules/farmers-details/farmers-details.component';
+import { FarmersDetailsComponent } from './modules/pages/farmers-details/farmers-details.component';
 
 import { CardComponent } from './shared/components/card/card.component';
 import { FarmersComponent } from './modules/pages/farmers/farmers.component';
