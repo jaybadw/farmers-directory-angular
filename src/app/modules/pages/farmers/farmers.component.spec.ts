@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListpageComponent } from './listpage.component';
+import { FarmersComponent } from './farmers.component';
 
-describe('ListpageComponent', () => {
-  let component: ListpageComponent;
-  let fixture: ComponentFixture<ListpageComponent>;
+describe('FarmersComponent', () => {
+  let component: FarmersComponent;
+  let fixture: ComponentFixture<FarmersComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListpageComponent ]
+      declarations: [ FarmersComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListpageComponent);
+    fixture = TestBed.createComponent(FarmersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

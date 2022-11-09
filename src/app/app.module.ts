@@ -6,21 +6,26 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './modules/home/home.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
-import { ListpageComponent } from './modules/listpage/listpage.component';
+
+import { FarmersDetailsComponent } from './modules/pages/farmers-details/farmers-details.component';
+
+import { CardComponent } from './shared/components/card/card.component';
+import { FarmersComponent } from './modules/pages/farmers/farmers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
+    CardComponent,
+
+    FarmersComponent,
     FooterComponent,
-    ListpageComponent
+
+    FarmersDetailsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
