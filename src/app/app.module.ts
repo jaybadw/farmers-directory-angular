@@ -12,6 +12,7 @@ import { FarmersDetailsComponent } from './modules/pages/farmers-details/farmers
 import { CardComponent } from './shared/components/card/card.component';
 import { FarmersComponent } from './modules/pages/farmers/farmers.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,9 @@ import { FarmersComponent } from './modules/pages/farmers/farmers.component';
 
     FarmersDetailsComponent,
   ],
+
   imports: [BrowserModule, AppRoutingModule],
+
   providers: [],
   bootstrap: [AppComponent],
 })

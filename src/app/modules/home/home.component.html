@@ -55,10 +55,11 @@
     </div>
 
     <div class="mt-8 grid grid-cols-2 gap-x-8 gap-y-8 lg:grid-cols-3">
-      <a
-        href="#"
+      <div
+
         class="block hover:shadow-lg"
         *ngFor="let featured of produce"
+
       >
         <img
           alt=""
@@ -75,12 +76,14 @@
 
           <button
             routerLink="{{ featured.url }}"
+
             class="text-xs uppercase rounded-full tracking-wide text-white px-4 py-3 bg-green-600 md:text-sm lg:text-base mt-5"
           >
             View Farmers
           </button>
+
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </section>
@@ -118,19 +121,21 @@
         href="#"
         class="inline-flex h-8 w-16 items-center border border-black justify-evenly"
       >
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
           viewBox="0 0 20 20"
           fill="currentColor"
         >
+
           <path
             fill-rule="evenodd"
             d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
             clip-rule="evenodd"
           />
         </svg>
-        <span>Prev </span>
+        <span>Prev  </span>
       </a>
     </li>
 
@@ -180,3 +185,4 @@
     </li>
   </ol>
 </section>
+
