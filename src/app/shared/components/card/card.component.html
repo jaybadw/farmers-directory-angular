@@ -1,6 +1,6 @@
 <ng-container *ngIf="farmer">
   <div
-    class="p-4 lg:w-3/4 border border-black my-10 mx-auto min-h-96 flex justify-center cursor-pointer"
+    class="py-20 px-5 lg:w-3/5 border border-black my-10 mx-auto flex justify-center cursor-pointer w-3/4"
   >
     <div
       class="h-full flex sm:flex-row flex-col items-center justify-center text-center sm:text-left w-full"
@@ -56,8 +56,7 @@
         <button
           class="px-5 py-2 bg-mainTeal text-white rounded-full"
           *ngIf="product"
-          routerLink= "{{product.url}}"
-
+          [routerLink]="['/farmers']"
         >
           View Farmers
         </button>

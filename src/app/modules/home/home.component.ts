@@ -36,16 +36,13 @@ export class HomeComponent implements OnInit {
     {
       id: 'Region',
 
-
       url: 'farmers',
-
 
       name: 'Watermelon',
       image: 'assets/images/featured-produce/melon.png',
     },
     {
       id: 'Region',
-
 
       url: 'farmers',
 
@@ -55,9 +52,7 @@ export class HomeComponent implements OnInit {
     {
       id: 'Region',
 
-
       url: 'farmers',
-
 
       name: 'Banana',
       image: 'assets/images/featured-produce/banana.png',
