@@ -1,16 +1,16 @@
-<section>
+<section *ngIf="getFarmer">
     <div class="banner">
         <div class="overlay">
             <div class="image">
-                <img src="assets/images/user.jpeg" alt="">
+                <img src="{{getFarmer.image}}" alt="">
             </div>
-            <h1>John Brown</h1>
+            <h1>{{getFarmer.fname}} {{getFarmer.lname}}</h1>
             <div class="location">
                 <i class="fa-solid fa-bag-shopping"></i>
-                <h2 class="job">Organic Cultivator</h2>
+                <h2 class="job">{{getFarmer.farmer_type}}</h2>
                 <h2>/</h2>
                 <i class="fa-solid fa-location-pin"></i>
-                <h2>Kingston</h2>
+                <h2>{{getFarmer.address.parish}}</h2>
             </div>
         </div>
     </div>
@@ -18,7 +18,7 @@
         <div class="divider">
             <h1>Produce</h1>
         </div>
-        <div class="prodOption">
+        <div class="prodOption" *ngFor="let farmer of ">
             <div class="prodBtn">Yam</div>
         </div>
     </div>
@@ -26,7 +26,7 @@
         <div class="divider">
             <h1>About</h1>
         </div>
-        <h2 class="userDetail">Expert cultivator. Ensuring we grow smart, eat smart. Supplying a better Jamaica.</h2>
+        <h2 class="userDetail">{{getFarmer.description}}</h2>
         <div class="divider">
             <h1>Contacts</h1>
         </div>
@@ -34,11 +34,11 @@
             <div class="contact">
                 <h2>
                     <i class="fa-solid fa-phone"></i>
-                    +18768888888
+                    + {{getFarmer.phone}}
                 </h2>
                 <h2>
                     <i class="fa-solid fa-envelope"></i>
-                    random@gmail.com
+                    {{getFarmer.email}}
                 </h2>
             </div>
         </div>

@@ -12,7 +12,8 @@ export class FarmersDetailsComponent implements OnInit {
 
   constructor(private FarmerDetalsService: FarmerDetailsService, private Router: Router, private route:ActivatedRoute) { }
 
-  getFarmer!: FarmerDetailsService
+  getFarmer!: farmerDetails
+  waiting:boolean = true
   arraySearch = 0
   ngOnInit(): void {
     let id = this.route.snapshot.params["id"];
@@ -22,9 +23,9 @@ export class FarmersDetailsComponent implements OnInit {
 
   getFarmerById( id: string){
     this.FarmerDetalsService.getFarmerById(id).subscribe(farmer=>{
-      this.getFarmer = farmer;
-    
+      this.getFarmer = farmer.data;
+      this.waiting = false
+      console.log(farmer)
     })
   }
-
 }
