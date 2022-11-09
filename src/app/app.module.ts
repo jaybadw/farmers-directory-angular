@@ -11,7 +11,7 @@ import { FarmersDetailsComponent } from './modules/pages/farmers-details/farmers
 
 import { CardComponent } from './shared/components/card/card.component';
 import { FarmersComponent } from './modules/pages/farmers/farmers.component';
-import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +25,9 @@ import { RouterModule } from '@angular/router';
 
     FarmersDetailsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule],
+
+  imports: [BrowserModule, AppRoutingModule],
+
   providers: [],
   bootstrap: [AppComponent],
 })
