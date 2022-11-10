@@ -6,7 +6,9 @@ import { RouterModule, Routes, Router } from '@angular/router';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'home/farmers', component: FarmersComponent },
+
+  { path: 'farmers', component: FarmersComponent },
+
   { path: 'details', component: FarmersDetailsComponent },
   { path: '**', redirectTo: 'home' },
 ];

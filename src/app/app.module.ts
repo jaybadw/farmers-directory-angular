@@ -1,3 +1,4 @@
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,8 +13,6 @@ import { FarmersDetailsComponent } from './modules/pages/farmers-details/farmers
 import { CardComponent } from './shared/components/card/card.component';
 import { FarmersComponent } from './modules/pages/farmers/farmers.component';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { CropsComponent } from './pages/crops/crops.component';
 
 @NgModule({
@@ -29,7 +28,7 @@ import { CropsComponent } from './pages/crops/crops.component';
     FarmersDetailsComponent,
       CropsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule, FormsModule, Ng2SearchPipeModule,],
+  imports: [BrowserModule, AppRoutingModule, RouterModule, Ng2SearchPipeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
