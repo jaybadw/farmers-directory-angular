@@ -12,6 +12,9 @@ import { FarmersDetailsComponent } from './modules/pages/farmers-details/farmers
 import { CardComponent } from './shared/components/card/card.component';
 import { FarmersComponent } from './modules/pages/farmers/farmers.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { CropsComponent } from './pages/crops/crops.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +27,9 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
 
     FarmersDetailsComponent,
+      CropsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule],
+  imports: [BrowserModule, AppRoutingModule, RouterModule, FormsModule, Ng2SearchPipeModule,],
   providers: [],
   bootstrap: [AppComponent],
 })
