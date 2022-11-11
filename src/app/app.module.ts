@@ -13,6 +13,7 @@ import { CardComponent } from './shared/components/card/card.component';
 import { FarmersComponent } from './modules/pages/farmers/farmers.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { InterceptInterceptor } from './services/intercept.interceptor';
+import { LivestockComponent } from './modules/livestock/livestock.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { InterceptInterceptor } from './services/intercept.interceptor';
     FarmersComponent,
     FooterComponent,
 
-    FarmersDetailsComponent
+    FarmersDetailsComponent,
+      LivestockComponent
   ],
 
   imports: 

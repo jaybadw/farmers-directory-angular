@@ -1,0 +1,10 @@
+<div class="livestock">
+    <h1 *ngIf="category">{{category.category_name}}</h1>
+    <div class="displayLive">
+        <div class="card" *ngFor="let prod of filteredProd">
+            <img src="{{prod.prod_img}}" alt="">
+            <h2>{{prod.prod_name}}</h2>
+            <a href="">Find Farmer</a>
+        </div>
+    </div>
+</div>
