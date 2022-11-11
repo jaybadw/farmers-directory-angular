@@ -1,3 +1,4 @@
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,10 +9,12 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 
 import { FarmersDetailsComponent } from './modules/pages/farmers-details/farmers-details.component';
+import { FormsModule } from '@angular/forms';
 
 import { CardComponent } from './shared/components/card/card.component';
 import { FarmersComponent } from './modules/pages/farmers/farmers.component';
-
+import { RouterModule } from '@angular/router';
+import { CropsComponent } from './pages/crops/crops.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +27,9 @@ import { FarmersComponent } from './modules/pages/farmers/farmers.component';
     FooterComponent,
 
     FarmersDetailsComponent,
+      CropsComponent,
   ],
-
-  imports: [BrowserModule, AppRoutingModule],
-
+  imports: [BrowserModule, AppRoutingModule, RouterModule, Ng2SearchPipeModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

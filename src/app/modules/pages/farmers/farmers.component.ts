@@ -1,5 +1,6 @@
 import { Farmer } from './../../../shared/components/models/farmer';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @Component({
   selector: 'app-farmers',
@@ -7,9 +8,37 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./farmers.component.scss'],
 })
 export class FarmersComponent implements OnInit {
-  constructor() {}
 
-  ngOnInit(): void {}
+  term!: string;
+  enteredSearchValue: string = "";
+
+  @Output()
+  searchTextChanged: EventEmitter<string> = new EventEmitter<string>();
+
+  onSearchTextChanged(){
+    this.searchTextChanged.emit(this.enteredSearchValue);
+  }
+
+  searchText: string = "";
+
+
+
+  hello: string = "hello";
+  onSearchTextEntered(searchValue: string){
+    this.searchText = searchValue;
+    console.log(this.searchText);
+  }
+
+  constructor() {
+
+  }
+
+
+
+  ngOnInit(): void {
+
+  }
+
   farmers: Farmer[] = [
     {
       id: 'Main Produce',
@@ -55,3 +84,5 @@ export class FarmersComponent implements OnInit {
     },
   ];
 }
+
+
