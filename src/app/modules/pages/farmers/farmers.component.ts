@@ -1,6 +1,5 @@
 import { Farmer } from './../../../shared/components/models/farmer';
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @Component({
   selector: 'app-farmers',
