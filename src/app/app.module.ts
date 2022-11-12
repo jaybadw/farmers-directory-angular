@@ -11,6 +11,7 @@ import { FarmersDetailsComponent } from './modules/pages/farmers-details/farmers
 
 import { CardComponent } from './shared/components/card/card.component';
 import { FarmersComponent } from './modules/pages/farmers/farmers.component';
+import { AboutComponent } from './modules/pages/about/about.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { FarmersComponent } from './modules/pages/farmers/farmers.component';
     FooterComponent,
 
     FarmersDetailsComponent,
+      AboutComponent,
   ],
 
   imports: [BrowserModule, AppRoutingModule],
