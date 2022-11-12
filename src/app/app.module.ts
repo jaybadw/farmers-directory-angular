@@ -15,8 +15,12 @@ import { FormsModule } from '@angular/forms';
 
 import { CardComponent } from './shared/components/card/card.component';
 import { FarmersComponent } from './modules/pages/farmers/farmers.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { InterceptInterceptor } from './services/intercept.interceptor';
+import { LivestockComponent } from './modules/livestock/livestock.component';
 import { RouterModule } from '@angular/router';
 import { CropsComponent } from './pages/crops/crops.component';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +34,7 @@ import { CropsComponent } from './pages/crops/crops.component';
 
     FarmersDetailsComponent,
     CropsComponent,
+      LivestockComponent,
   ],
   imports: [
     BrowserModule,

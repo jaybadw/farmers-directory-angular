@@ -3,6 +3,7 @@ import { FarmersComponent } from './modules/pages/farmers/farmers.component';
 import { HomeComponent } from './modules/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Router } from '@angular/router';
+import { LivestockComponent } from './modules/livestock/livestock.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'details', component: FarmersDetailsComponent },
   { path: '**', redirectTo: 'home' },
   { path: 'farmer/:id', component: FarmersDetailsComponent },
+  {path: 'categories/:id', component: LivestockComponent},
 ];
 
 @NgModule({

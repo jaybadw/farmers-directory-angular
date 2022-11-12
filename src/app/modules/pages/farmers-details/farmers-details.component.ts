@@ -14,7 +14,6 @@ export class FarmersDetailsComponent implements OnInit {
 
   getFarmer!: farmerDetails
   waiting:boolean = true
-  arraySearch = 0
   ngOnInit(): void {
     let id = this.route.snapshot.params["id"];
     console.log(id)
