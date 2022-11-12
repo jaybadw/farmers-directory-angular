@@ -1,6 +1,5 @@
 import { FarmersDetailsComponent } from './modules/pages/farmers-details/farmers-details.component';
 
-
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,7 +20,6 @@ import { LivestockComponent } from './modules/livestock/livestock.component';
 import { RouterModule } from '@angular/router';
 import { CropsComponent } from './pages/crops/crops.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +32,7 @@ import { CropsComponent } from './pages/crops/crops.component';
 
     FarmersDetailsComponent,
     CropsComponent,
-      LivestockComponent,
+    LivestockComponent,
   ],
   imports: [
     BrowserModule,
