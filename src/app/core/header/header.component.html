@@ -122,15 +122,12 @@
         >Home</a
       >
       <a
-        class="flex-shrink-0 px-4 py-1 rounded-full border text-mainTeal bg-mainGray hover:bg-mainTeal hover:text-white"
-        href=""
-        >Livestock</a
+        *ngFor="let cat of category"
+        class="flex-shrink-0 px-4 py-1 rounded-full border text-gray-900"
+        href="categories/{{ cat._id }}"
+        >{{ cat.category_name }}</a
       >
-      <a
-        class="flex-shrink-0 px-4 py-1 rounded-full border text-mainTeal bg-mainGray hover:bg-mainTeal hover:text-white"
-        href=""
-        >Crop</a
-      >
+
       <a
         class="flex-shrink-0 px-4 py-1 rounded-full border text-mainTeal bg-mainGray hover:bg-mainTeal hover:text-white"
         [routerLink]="['farmers']"
