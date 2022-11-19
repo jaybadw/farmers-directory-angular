@@ -12,7 +12,7 @@ const routes: Routes = [
 
   { path: 'farmers', component: FarmersComponent },
   { path: 'about', component: AboutComponent },
-==
+
   { path: 'home/farmers', component: FarmersComponent },
 
 
